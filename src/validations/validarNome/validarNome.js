@@ -2,12 +2,12 @@ function validarNome(nome){
     if(nome == ''){
       return {
         valido:false,
-        nomeMsg: "Campo obrigatório"
+        msg: "Insira seu nome!"
       }
     } else{
       return {
         valido:true,
-        nomeMsg: ""
+        msg: ""
       }
     }
   }

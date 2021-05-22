@@ -3,12 +3,12 @@ function validarCPF(cpf) {
   if (cpf.length !== 11) {
     return {
       valido: false,
-      cpfMsg: "CPF deve ter 11 dígitos!",
+      msg: "CPF deve ter 11 dígitos!",
     };
   }else if(reg.test(cpf)==false){
     return {
       valido: false,
-      cpfMsg: "DIGITE APENAS NÚMEROS SEU ANIMAL!"
+      msg: "DIGITE APENAS NÚMEROS SEU ANIMAL!"
     };
   }else {
     
@@ -63,13 +63,13 @@ function validarCPF(cpf) {
     if (resultCalc !== cpfInput) {
       return {
         valido: false,
-        cpfMsg:
+        msg:
           "O CPF inserido não é válido! Verifique a digitação e tente novamente.",
       };
     } else {
       return {
         valido: true,
-        cpfMsg: "CPF válido!",
+        msg: "CPF válido!",
       };
     }
 
